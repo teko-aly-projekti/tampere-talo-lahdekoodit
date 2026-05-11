@@ -28,4 +28,12 @@ Tekee pylväsdiagrammin selostesumma(vuosi).xlsx tiedostoista, jossa voi vertail
 ### labra-lkm.py
 Tekee pylväsdiagrammin selostelkm(vuosi).xlsx tiedostoista, jossa voi vertailla kuinka monta labrakoetta on tehty eri vuosina.
 
-### 
+### not_labra-summa.py
+Tekee pylväsdiagrammin selostesumma(vuosi).xlsx tiedostoista, jossa voi vertailla miten paljon kunakin vuotena on käytetty muihin kuin labrakokeisiin.
+
+### not_labra-lkm.py
+Tekee pylväsdiagrammin selostelkm(vuosi).xlsx tiedostoista, jossa voi vertailla kuinka paljon on käyty muissa kuin labrakokeissa.
+
+### monthly_comparisons.py
+vertailee eri vuosien kuukausi toisiinsa yhteensä käytetyn summan perusteella.
+
