@@ -53,8 +53,8 @@ Tuloksena syntyy tiedosto tyyliin:
 ## 3. Visualisoinnit
 Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
-Laboratoriot
-labra_erikseen.py
+### Laboratoriot
+#### labra_erikseen.py
 Luo erilliset pylväsdiagrammit vuosille 2023, 2024 ja 2025
 
 labra_summa.py
