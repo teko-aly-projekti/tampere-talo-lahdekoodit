@@ -50,7 +50,7 @@ Tämä skripti yhdistää samat selosteet ja laskee niiden Lkm-arvot yhteen.
 Tuloksena syntyy tiedosto tyyliin:
 `selostelkm2025.xlsx`
 
-## 3. Visualisoinnit
+### 3. Visualisoinnit
 Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
 ### Laboratoriot
