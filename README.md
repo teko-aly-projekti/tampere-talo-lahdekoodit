@@ -64,7 +64,6 @@ Vertaa laboratoriotutkimusten kustannuksia eri vuosina
 #### labra_lkm.py
 Vertaa laboratoriotutkimusten määriä eri vuosina
 
-### 
 ### Muut vertailut
 
 #### monthly_comparisons.py
@@ -76,15 +75,21 @@ Käyttömäärien vertailu
 #### not_labra_summa.py
 Muiden kuin laboratoriopalveluiden kustannusvertailu
 
-#### not_labra_lkm.py
+- `not_labra_lkm.py`
 Muiden kuin laboratoriopalveluiden määrien vertailu
+
+- `09-autumn-service-usage.py`  
+  Visualisoi syksyn (syyskuu–marraskuu) työterveyspalveluiden kustannusjakauman palvelukategorioittain eri vuosina.
+
+- `10-autumn-top-services.py`  
+  Visualisoi syksyn suurimmat yksittäiset palvelut ja vertailee niiden kustannuksia eri vuosien välillä.
 
 ## Tärkeää
 Useimmissa skripteissä pitää muuttaa:
 
-- lähdetiedoston nimi
-- vuosiluku
-- tulostiedoston nimi
+- Lähdetiedoston nimi
+- Vuosiluku
+- Tulostiedoston nimi
 
 Tarkista aina skriptin kommentit ennen ajoa.
 
@@ -106,6 +111,6 @@ Projektin tuloksena syntyy:
 - Laboratoriotutkimusten visualisointeja
 - Laportointiin sopivia kuvaajia
 
-### Huomio
+## Huomio
 Tämä ei ole täysin automaattinen järjestelmä.
 PDF-muunnoksen jälkeen data vaatii yleensä käsin tehtävää tarkistusta ennen jatkoanalyysiä.
