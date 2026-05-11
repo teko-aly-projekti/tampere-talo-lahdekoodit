@@ -38,7 +38,7 @@ seloste_adition.py
 ```
 Tämä skripti yhdistää samat selosteet ja laskee niiden kustannussummat yhteen.
 
-Tuloksena syntyy tiedosto tyyliin:
+Tuloksena syntyy tiedosto tyyliin:  
 `selostesumma2025.xlsx`
 
 Aja myös:
@@ -47,7 +47,7 @@ lkm_adition.py
 ```
 Tämä skripti yhdistää samat selosteet ja laskee niiden Lkm-arvot yhteen.
 
-Tuloksena syntyy tiedosto tyyliin:
+Tuloksena syntyy tiedosto tyyliin:  
 `selostelkm2025.xlsx`
 
 ### 3. Visualisoinnit
@@ -55,13 +55,13 @@ Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
 ### Laboratoriot
 
-- `labra_erikseen.py`
+- `labra_erikseen.py`  
   Luo erilliset pylväsdiagrammit vuosille 2023, 2024 ja 2025
 
-- `labra_summa.py`
+- `labra_summa.py`  
   Vertaa laboratoriotutkimusten kustannuksia eri vuosina
 
-- `labra_lkm.py`
+- `labra_lkm.py`  
   Vertaa laboratoriotutkimusten määriä eri vuosina
 
 ### Muut vertailut
