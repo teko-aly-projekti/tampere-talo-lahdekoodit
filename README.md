@@ -55,28 +55,28 @@ Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
 ### Laboratoriot
 
-#### labra_erikseen.py
-Luo erilliset pylväsdiagrammit vuosille 2023, 2024 ja 2025
+- `labra_erikseen.py`
+  Luo erilliset pylväsdiagrammit vuosille 2023, 2024 ja 2025
 
-#### labra_summa.py
-Vertaa laboratoriotutkimusten kustannuksia eri vuosina
+- `labra_summa.py`
+  Vertaa laboratoriotutkimusten kustannuksia eri vuosina
 
-#### labra_lkm.py
-Vertaa laboratoriotutkimusten määriä eri vuosina
+- `labra_lkm.py`
+  Vertaa laboratoriotutkimusten määriä eri vuosina
 
 ### Muut vertailut
 
-#### monthly_comparisons.py
-Kuukausikohtaiset vertailut eri vuosien välillä
+- `monthly_comparisons.py`
+  Kuukausikohtaiset vertailut eri vuosien välillä
 
-#### lkm_comparisons.py
-Käyttömäärien vertailu
+- `lkm_comparisons.py`
+  Käyttömäärien vertailu
 
-#### not_labra_summa.py
-Muiden kuin laboratoriopalveluiden kustannusvertailu
+- `not_labra_summa.py`
+  Muiden kuin laboratoriopalveluiden kustannusvertailu
 
 - `not_labra_lkm.py`
-Muiden kuin laboratoriopalveluiden määrien vertailu
+  Muiden kuin laboratoriopalveluiden määrien vertailu
 
 - `09-autumn-service-usage.py`  
   Visualisoi syksyn (syyskuu–marraskuu) työterveyspalveluiden kustannusjakauman palvelukategorioittain eri vuosina.
