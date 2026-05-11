@@ -26,4 +26,6 @@ Sitä ei kannata editoida.
 Tekee pylväsdiagrammin selostesumma(vuosi).xlsx tiedostoista, jossa voi vertailla miten paljon kunakin vuotena on käytetty labrakokeisiin.
 
 ### labra-lkm.py
+Tekee pylväsdiagrammin selostelkm(vuosi).xlsx tiedostoista, jossa voi vertailla kuinka monta labrakoetta on tehty eri vuosina.
 
+### 
