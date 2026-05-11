@@ -1,39 +1,110 @@
-# tampere-talo-lahdekoodit
+# Tampere-talo-lähdekoodit
 
-## PDF --> Excels
+Tämä repositorio sisältää Python-skriptit työterveyskustannusdatan muuntamiseen, käsittelyyn ja visualisointiin.
 
-Tee pdfs kansio ja excels kansio.
-Laita kaikki vuoden pdf tiedostot kansioon pdfs.
-Käytä pdfhandlingallfiles.py ensin. Koodissa lukee, mitkä kohdat pitää vaihtaa.
-pdfhandlingallfiles.py muuntaa kaikki pdf tiedostot yhdeksi excel tiedostoksi. Tiedot on eritelty sheetseihin pdf tiedostojen mukaan.
-Tarkista ja muokkaa excel taulukot, koska niihin jää virheitä.
+Projektin tavoitteena on:
+- muuntaa PDF-muotoinen lähtödata Exceliksi
+- siistiä ja yhdistää data analyysiä varten
+- muodostaa seloste- ja laboratoriokohtaisia yhteenvetoja
+- tuottaa visualisointeja raportointia varten
 
-### summa_adition.py 
-Lisää yhteen kaikki excelissä olevat selosteet summan mukaan ja tekee selostesumma(vuosi).xlsx tiedoston excels kansioon.
+## Kansiorakenne
 
-### lkm_adition.py 
-Lisää yhteen kaikki excelissä olevat selosteet LKM mukaan ja tekee selostelmk(vuosi).xlsx tiedoston excels kansioon.
+Luo projektia varten ainakin seuraavat kansiot:
 
-## Excels --> Diagrammi
+- `pdfs/` – vuoden PDF-tiedostot
+- `excels/` – muunnetut ja jatkokäsitellyt Excel-tiedostot
 
-Kaikissa koodeissa on ohjeet koodin muokkaamiseen ja uusien tietojen/vuosien lisäämiseen.
+## Työjärjestys
 
-### labra_erikseen.py
-Luo kolme erillistä pylväsdiagrammia vuosista 2023, 2024 ja 2025.
-Sitä ei kannata editoida.
+### 1. PDF -> Excel
 
-### labra-summa.py 
-Tekee pylväsdiagrammin selostesumma(vuosi).xlsx tiedostoista, jossa voi vertailla miten paljon kunakin vuotena on käytetty labrakokeisiin.
+Laita kaikki analysoitavan vuoden PDF-tiedostot kansioon `pdfs/`.
 
-### labra-lkm.py
-Tekee pylväsdiagrammin selostelkm(vuosi).xlsx tiedostoista, jossa voi vertailla kuinka monta labrakoetta on tehty eri vuosina.
+Aja:
 
-### not_labra-summa.py
-Tekee pylväsdiagrammin selostesumma(vuosi).xlsx tiedostoista, jossa voi vertailla miten paljon kunakin vuotena on käytetty muihin kuin labrakokeisiin.
+```bash
+pdfhandlingallfiles.py
 
-### not_labra-lkm.py
-Tekee pylväsdiagrammin selostelkm(vuosi).xlsx tiedostoista, jossa voi vertailla kuinka paljon on käyty muissa kuin labrakokeissa.
 
-### monthly_comparisons.py
-vertailee eri vuosien kuukausi toisiinsa yhteensä käytetyn summan perusteella.
+Skripti muuntaa kaikki PDF-tiedostot yhdeksi Excel-tiedostoksi ja erottaa tiedot omille sheeteille PDF-tiedostojen mukaan.
 
+Huom:
+PDF-muunnoksen jälkeen Excel pitää tarkistaa ja siistiä käsin, koska dataan jää yleensä virheitä.
+
+2. Selosteiden yhdistäminen
+Aja:
+
+seloste_adition.py
+Tämä skripti yhdistää samat selosteet ja laskee niiden kustannussummat yhteen.
+Tuloksena syntyy tiedosto tyyliin:
+
+selostesumma2025.xlsx
+Aja myös:
+
+lkm_adition.py
+Tämä skripti yhdistää samat selosteet ja laskee niiden Lkm-arvot yhteen.
+Tuloksena syntyy tiedosto tyyliin:
+
+selostelkm2025.xlsx
+3. Visualisoinnit
+Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
+
+Laboratoriot
+labra_erikseen.py
+Luo erilliset pylväsdiagrammit vuosille 2023, 2024 ja 2025
+
+labra_summa.py
+Vertaa laboratoriotutkimusten kustannuksia eri vuosina
+
+labra_lkm.py
+Vertaa laboratoriotutkimusten määriä eri vuosina
+
+
+
+Muut vertailut
+monthly_comparisons.py
+Kuukausikohtaiset vertailut eri vuosien välillä
+
+lkm_comparisons.py
+Käyttömäärien vertailu
+
+not_labra_summa.py
+Muiden kuin laboratoriopalveluiden kustannusvertailu
+
+not_labra_lkm.py
+Muiden kuin laboratoriopalveluiden määrien vertailu
+
+Tärkeää
+Useimmissa skripteissä pitää muuttaa:
+
+lähdetiedoston nimi
+vuosiluku
+tulostiedoston nimi
+Esimerkiksi:
+
+file_path = "excels/tamperetalo2025.xlsx"
+ja
+
+result.to_excel("excels/selostelkm2025.xlsx", index=False)
+Tarkista aina skriptin kommentit ennen ajoa.
+
+Suositeltu käyttöjärjestys
+Luo pdfs/ ja excels/
+Lisää vuoden PDF:t kansioon pdfs/
+Aja pdfhandlingallfiles.py
+Siisti syntynyt Excel käsin
+Aja seloste_adition.py
+Aja lkm_adition.py
+Luo visualisoinnit tarvittavilla skripteillä
+Tuotokset
+Projektin tuloksena syntyy:
+
+yhdistettyjä Excel-tiedostoja
+selostekohtaisia yhteenvetoja
+määrien ja kustannusten vertailuja
+laboratoriotutkimusten visualisointeja
+raportointiin sopivia kuvaajia
+Huomio
+Tämä ei ole täysin automaattinen järjestelmä.
+PDF-muunnoksen jälkeen data vaatii yleensä käsin tehtävää tarkistusta ennen jatkoanalyysiä.
