@@ -15,9 +15,9 @@ Luo projektia varten ainakin seuraavat kansiot:
 - `pdfs/` – vuoden PDF-tiedostot
 - `excels/` – muunnetut ja jatkokäsitellyt Excel-tiedostot
 
-## Työjärjestys
+### Työjärjestys
 
-### 1. PDF -> Excel
+## 1. PDF -> Excel
 
 Laita kaikki analysoitavan vuoden PDF-tiedostot kansioon `pdfs/`.
 
@@ -31,7 +31,7 @@ Skripti muuntaa kaikki PDF-tiedostot yhdeksi Excel-tiedostoksi ja erottaa tiedot
 Huom:
 PDF-muunnoksen jälkeen Excel pitää tarkistaa ja siistiä käsin, koska dataan jää yleensä virheitä.
 
-2. Selosteiden yhdistäminen
+## 2. Selosteiden yhdistäminen
 Aja:
 
 seloste_adition.py
@@ -46,7 +46,7 @@ Tämä skripti yhdistää samat selosteet ja laskee niiden Lkm-arvot yhteen.
 Tuloksena syntyy tiedosto tyyliin:
 
 selostelkm2025.xlsx
-3. Visualisoinnit
+## 3. Visualisoinnit
 Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
 Laboratoriot
