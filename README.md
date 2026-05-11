@@ -66,20 +66,20 @@ Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
 ### Muut vertailut
 
-- `monthly_comparisons.py`
+- `monthly_comparisons.py`  
   Kuukausikohtaiset vertailut eri vuosien välillä
 
-- `lkm_comparisons.py`
+- `lkm_comparisons.py`  
   Käyttömäärien vertailu
 
-- `not_labra_summa.py`
+- `not_labra_summa.py`   
   Muiden kuin laboratoriopalveluiden kustannusvertailu
 
-- `not_labra_lkm.py`
+- `not_labra_lkm.py`  
   Muiden kuin laboratoriopalveluiden määrien vertailu
 
 - `09-autumn-service-usage.py`  
-  Visualisoi syksyn (syyskuu–marraskuu)
+  Visualisoi syksyn (syyskuu–marraskuu) työterveyspalveluiden kustannusjakauman palvelukategorioittain eri vuosina.
 
 - `10-autumn-top-services.py`  
   Visualisoi syksyn suurimmat yksittäiset palvelut ja vertailee niiden kustannuksia eri vuosien välillä.
