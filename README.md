@@ -23,7 +23,6 @@ Laita kaikki analysoitavan vuoden PDF-tiedostot kansioon `pdfs/`.
 
 Aja:
 
-```bash
 pdfhandlingallfiles.py
 
 
