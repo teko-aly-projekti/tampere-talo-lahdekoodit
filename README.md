@@ -34,7 +34,7 @@ PDF-muunnoksen jälkeen Excel pitää tarkistaa ja siistiä käsin, koska dataan
 ### 2. Selosteiden yhdistäminen
 Aja:
 ```
-seloste_adition.py
+summa_adition.py
 ```
 Tämä skripti yhdistää samat selosteet ja laskee niiden kustannussummat yhteen.
 
@@ -78,10 +78,10 @@ Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 - `not_labra_lkm.py`  
   Muiden kuin laboratoriopalveluiden määrien vertailu
 
-- `09-autumn-service-usage.py`  
+- `autumn-service-usage.py`  
   Visualisoi syksyn (syyskuu–marraskuu) työterveyspalveluiden kustannusjakauman palvelukategorioittain eri vuosina.
 
-- `10-autumn-top-services.py`  
+- `autumn-top-services.py`  
   Visualisoi syksyn suurimmat yksittäiset palvelut ja vertailee niiden kustannuksia eri vuosien välillä.
 
 ## Tärkeää
