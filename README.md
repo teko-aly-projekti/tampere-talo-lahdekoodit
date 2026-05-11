@@ -54,60 +54,61 @@ Tuloksena syntyy tiedosto tyyliin:
 Projektissa on erillisiä skriptejä visualisointeihin ja vertailuihin.
 
 ### Laboratoriot
+
 #### labra_erikseen.py
 Luo erilliset pylväsdiagrammit vuosille 2023, 2024 ja 2025
 
-labra_summa.py
+
+#### labra_summa.py
 Vertaa laboratoriotutkimusten kustannuksia eri vuosina
 
-labra_lkm.py
+
+#### labra_lkm.py
 Vertaa laboratoriotutkimusten määriä eri vuosina
 
 
 
-Muut vertailut
-monthly_comparisons.py
+### Muut vertailut
+
+#### monthly_comparisons.py
 Kuukausikohtaiset vertailut eri vuosien välillä
 
-lkm_comparisons.py
+#### lkm_comparisons.py
 Käyttömäärien vertailu
 
-not_labra_summa.py
+#### not_labra_summa.py
 Muiden kuin laboratoriopalveluiden kustannusvertailu
 
-not_labra_lkm.py
+#### not_labra_lkm.py
 Muiden kuin laboratoriopalveluiden määrien vertailu
 
-Tärkeää
+## Tärkeää
 Useimmissa skripteissä pitää muuttaa:
 
-lähdetiedoston nimi
-vuosiluku
-tulostiedoston nimi
-Esimerkiksi:
+- lähdetiedoston nimi
+- vuosiluku
+- tulostiedoston nimi
 
-file_path = "excels/tamperetalo2025.xlsx"
-ja
-
-result.to_excel("excels/selostelkm2025.xlsx", index=False)
 Tarkista aina skriptin kommentit ennen ajoa.
 
-Suositeltu käyttöjärjestys
-Luo pdfs/ ja excels/
-Lisää vuoden PDF:t kansioon pdfs/
-Aja pdfhandlingallfiles.py
-Siisti syntynyt Excel käsin
-Aja seloste_adition.py
-Aja lkm_adition.py
-Luo visualisoinnit tarvittavilla skripteillä
-Tuotokset
+### Suositeltu käyttöjärjestys
+- Luo pdfs/ ja excels/
+- Lisää vuoden PDF:t kansioon pdfs/
+- Aja pdfhandlingallfiles.py
+- Siisti syntynyt Excel käsin
+- Aja seloste_adition.py
+- Aja lkm_adition.py
+- Luo visualisoinnit tarvittavilla skripteillä
+- Tuotokset
+  
 Projektin tuloksena syntyy:
 
-yhdistettyjä Excel-tiedostoja
-selostekohtaisia yhteenvetoja
-määrien ja kustannusten vertailuja
-laboratoriotutkimusten visualisointeja
-raportointiin sopivia kuvaajia
-Huomio
+- Yhdistettyjä Excel-tiedostoja
+- Selostekohtaisia yhteenvetoja
+- Määrien ja kustannusten vertailuja
+- Laboratoriotutkimusten visualisointeja
+- Laportointiin sopivia kuvaajia
+
+### Huomio
 Tämä ei ole täysin automaattinen järjestelmä.
 PDF-muunnoksen jälkeen data vaatii yleensä käsin tehtävää tarkistusta ennen jatkoanalyysiä.
